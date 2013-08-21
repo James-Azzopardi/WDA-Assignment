@@ -30,12 +30,24 @@
 		}
 		echo 'Connected to mysql <br />';
 		if(!mysql_select_db(DB_NAME, $dbconn)){
-			echo 'Could no use database ' . DB_NAME . '\n'
+			echo 'Could no use database ' . DB_NAME . '\n';
 			echo mysql_error() . '\n';
 			exit;
 		}
-		echo 'Connected to database ' . DB_NAME . '\n';
+		echo 'Connected to database ' . DB_NAME;
 	?>
-      
+	<form action="#" method="GET">
+		Wine Name: <input type="text" name="winename"><br />
+		Winery Name: <input type="text" name="winename"><br />
+		Region: // Dropdown list goes here <br />
+		Grape Variety: // Dropdown list goes here <br />
+		Year Range: <br />
+		From: // Dropdown list To: // Dropdown list <br />
+		Minimum number of wines in stock: <input type="text" name="winename"><br />
+		Minimum number of wines ordered: <input type="text" name="winename"><br />
+		Price: <br />	
+		Minimum: <input type="text" name="winename">Maximum: <input type="text" name="winename"><br />
+		<input type="submit">
+	</form>      
     </body>
 </html>
